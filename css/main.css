@@ -1,0 +1,77 @@
+.bg {
+    background-image: url('./../imges/bh.jpg');
+    min-height: 100%;
+    background-size: cover;
+    background-repeat: repeat-y;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+button {
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+button {
+    background:
+        linear-gradient(to right,
+            rgb(255, 255, 255),
+            rgb(255, 255, 255)),
+        linear-gradient(to right,
+            rgb(255, 162, 0),
+            rgb(225, 0, 255),
+            rgb(0, 200, 193));
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 300ms;
+}
+
+button:hover {
+    background-size: 0 3px, 100% 3px;
+}
+
+body {
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .a,
+    s6-button {
+        font-size: 10rem
+    }
+}
+
+.s6-content {
+    max-width: 80%;
+}
+
+p {
+    padding-left: 5%;
+}
