@@ -5,6 +5,10 @@
     background-repeat: repeat-y;
 }
 
+.fx {
+    position: relative;
+}
+
 a {
     color: inherit;
     text-decoration: none;
