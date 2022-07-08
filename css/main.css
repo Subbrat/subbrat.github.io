@@ -1,8 +1,10 @@
 .bg {
-    background-image: url('./../imges/bh.jpg');
+    background-image: url('./../imges/bg.jpg');
     min-height: 100%;
     background-size: cover;
     background-repeat: repeat-y;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
 .fx {
