@@ -86,3 +86,23 @@ body {
 p {
     padding-left: 5%;
 }
+
+.txxnx {
+    width: 32ch;
+    border-right: 3px solid;
+    animation: blink 1s step-end infinite, type 4.5s steps(40) forwards;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes type {
+    0% {
+        width: 0;
+    }
+}
