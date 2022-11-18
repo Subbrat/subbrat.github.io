@@ -10,7 +10,6 @@ html {
     background-repeat: repeat-y;
     background-position: center center;
     background-attachment: fixed;
-    position: fixed;
 }
 
 .fx {

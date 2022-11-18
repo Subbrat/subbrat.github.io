@@ -35,8 +35,6 @@
                         min-height: 900px;
                 }
 
-                /* RESET RULES
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
                 :root {
                         --white: #afafaf;
                         --red: #e31b23;
@@ -46,12 +44,6 @@
                         --bgFormElsFocus: hsl(0, 7%, 20%);
                 }
 
-                /* * {
-                        padding: 0;
-                        margin: 0;
-                        box-sizing: border-box;
-                        outline: none;
-                } */
                 button,
                 label {
                         cursor: pointer;
@@ -84,8 +76,6 @@
                         padding: 0 1.5rem;
                 }
 
-                /* FORM ELEMENTS
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
                 .frm h1 {
                         margin-bottom: 1.5rem;
                 }
@@ -142,11 +132,11 @@
                 }
 
                 .frm *:required {
-                        background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/asterisk.svg);
+                        background-image: url(./imges/ast.svg);
                 }
 
                 .frm select {
-                        background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/down.svg);
+                        background-image: url(./imges/down.svg);
                 }
 
                 .frm *:disabled {
@@ -154,11 +144,9 @@
                         filter: blur(2px);
                 }
 
-                /* FORM BTNS
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
                 .frm .required-msg {
                         display: none;
-                        background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/asterisk.svg) no-repeat center left / 15px 15px;
+                        background: url(./imges/ast.svg) no-repeat center left / 15px 15px;
                         padding-left: 20px;
                 }
 
@@ -195,8 +183,6 @@
                         transform: translateX(110%);
                 }
 
-                /* CUSTOM CHECKBOX
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
                 .frm input[type="checkbox"] {
                         position: absolute;
                         left: -9999px;
@@ -237,8 +223,6 @@
                         transform: rotate(45deg);
                 }
 
-                /* FOOTER
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
                 footer {
                         font-size: 1rem;
                         text-align: right;
@@ -253,8 +237,6 @@
                         color: var(--red);
                 }
 
-                /* MQ
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
                 @media screen and (min-width: 600px) {
                         .frm .grid {
                                 display: grid;
@@ -347,15 +329,13 @@
                                                 <div class="grid grid-2 s6-center">
                                                         <button class="btn-grid" type="submit" disabled>
                                                                 <span class="back">
-                                                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/email-icon.svg"
-                                                                                alt="">
+                                                                        <img src="./imges/mail.svg" alt="">
                                                                 </span>
                                                                 <span class="front">SUBMIT</span>
                                                         </button>
                                                         <button class="btn-grid" type="reset" disabled>
                                                                 <span class="back">
-                                                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/eraser-icon.svg"
-                                                                                alt="">
+                                                                        <img src="./imges/eras.svg" alt="">
                                                                 </span>
                                                                 <span class="front">RESET</span>
                                                         </button>
