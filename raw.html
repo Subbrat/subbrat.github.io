@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+
+<head>
+        <script>(function (w, d, s, l, i) {
+                        w[l] = w[l] || []; w[l].push({
+                                'gtm.start':
+                                        new Date().getTime(), event: 'gtm.js'
+                        }); var f = d.getElementsByTagName(s)[0],
+                                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                                        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+                })(window, document, 'script', 'dataLayer', 'GTM-PP4TQ36');</script>
+        <title>Subbrat</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="keywords"
+                content="Subbrat, Subrat, Subrat Mallick, Subbrat mallick, Subrat kumar mallick, subbrat iiser, subbrat m, subrat m, subrat iiser bpr, mallick subbrat, mallick subrat, ">
+        <link rel="shortcut icon" href="./imges/ic.png">
+        <link rel="stylesheet" href="./../el/css/s6css.css">
+        <link rel="stylesheet" href="./../el/css/ga.css">
+        <link rel="stylesheet" type="text/css" href="./css/main.css">
+        <link rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+                input {
+                        text-align: center;
+                }
+
+                /* RESET RULES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+                :root {
+                        --white: #afafaf;
+                        --red: #e31b23;
+                        --bodyColor: #292a2b;
+                        --borderFormEls: hsl(0, 0%, 10%);
+                        --bgFormEls: hsl(0, 0%, 14%);
+                        --bgFormElsFocus: hsl(0, 7%, 20%);
+                }
+
+                /* * {
+                        padding: 0;
+                        margin: 0;
+                        box-sizing: border-box;
+                        outline: none;
+                } */
+                button,
+                label {
+                        cursor: pointer;
+                }
+
+                select {
+                        appearance: none;
+                }
+
+                select::-ms-expand {
+                        display: none;
+                }
+
+                select:-moz-focusring {
+                        color: transparent !important;
+                        text-shadow: 0 0 0 var(--white);
+                }
+
+                textarea {
+                        resize: none;
+                }
+
+                ul {
+                        list-style: none;
+                }
+
+                .container {
+                        max-width: 800px;
+                        margin: 0 auto;
+                        padding: 0 1.5rem;
+                }
+
+                /* FORM ELEMENTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+                .frm h1 {
+                        margin-bottom: 1.5rem;
+                }
+
+                .frm li,
+                .frm .grid>*:not(:last-child) {
+                        margin-bottom: 1.5rem;
+                }
+
+                .frm select,
+                .frm input,
+                .frm textarea,
+                .frm button {
+                        width: 100%;
+                        line-height: 1.5;
+                        padding: 15px 10px;
+                        border: 1px solid var(--borderFormEls);
+                        color: var(--white);
+                        background: var(--bgFormEls);
+                        transition: background-color 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25),
+                                transform 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25);
+                }
+
+                .frm textarea {
+                        height: 170px;
+                }
+
+                .frm ::placeholder {
+                        color: inherit;
+                        /*Fix opacity issue on Firefox*/
+                        opacity: 1;
+                }
+
+                .frm select:focus,
+                .frm input:focus,
+                .frm textarea:focus,
+                .frm button:enabled:hover,
+                .frm button:focus,
+                .frm input[type="checkbox"]:focus+label {
+                        background: var(--bgFormElsFocus);
+                }
+
+                .frm select:focus,
+                .frm input:focus,
+                .frm textarea:focus {
+                        transform: scale(1.02);
+                }
+
+                .frm *:required,
+                .frm select {
+                        background-repeat: no-repeat;
+                        background-position: center right 12px;
+                        background-size: 15px 15px;
+                }
+
+                .frm *:required {
+                        background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/asterisk.svg);
+                }
+
+                .frm select {
+                        background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/down.svg);
+                }
+
+                .frm *:disabled {
+                        cursor: default;
+                        filter: blur(2px);
+                }
+
+                /* FORM BTNS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+                .frm .required-msg {
+                        display: none;
+                        background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/asterisk.svg) no-repeat center left / 15px 15px;
+                        padding-left: 20px;
+                }
+
+                .frm .btn-grid {
+                        position: relative;
+                        overflow: hidden;
+                        transition: filter 0.2s;
+                }
+
+                .frm button {
+                        font-weight: bold;
+                }
+
+                .frm button>* {
+                        display: inline-block;
+                        width: 100%;
+                        transition: transform 0.4s ease-in-out;
+                }
+
+                .frm button .back {
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-110%, -50%);
+                }
+
+                .frm button:enabled:hover .back,
+                .frm button:focus .back {
+                        transform: translate(-50%, -50%);
+                }
+
+                .frm button:enabled:hover .front,
+                .frm button:focus .front {
+                        transform: translateX(110%);
+                }
+
+                /* CUSTOM CHECKBOX
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+                .frm input[type="checkbox"] {
+                        position: absolute;
+                        left: -9999px;
+                }
+
+                .frm input[type="checkbox"]+label {
+                        position: relative;
+                        display: inline-block;
+                        padding-left: 2rem;
+                        transition: background 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25);
+                }
+
+                .frm input[type="checkbox"]+label::before,
+                .frm input[type="checkbox"]+label::after {
+                        content: '';
+                        position: absolute;
+                }
+
+                .frm input[type="checkbox"]+label::before {
+                        left: 0;
+                        top: 6px;
+                        width: 18px;
+                        height: 18px;
+                        border: 2px solid var(--white);
+                }
+
+                .frm input[type="checkbox"]:checked+label::before {
+                        background: var(--red);
+                }
+
+                .frm input[type="checkbox"]:checked+label::after {
+                        left: 7px;
+                        top: 7px;
+                        width: 6px;
+                        height: 14px;
+                        border-bottom: 2px solid var(--white);
+                        border-right: 2px solid var(--white);
+                        transform: rotate(45deg);
+                }
+
+                /* FOOTER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+                footer {
+                        font-size: 1rem;
+                        text-align: right;
+                        backface-visibility: hidden;
+                }
+
+                footer a {
+                        text-decoration: none;
+                }
+
+                footer span {
+                        color: var(--red);
+                }
+
+                /* MQ
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+                @media screen and (min-width: 600px) {
+                        .frm .grid {
+                                display: grid;
+                                grid-gap: 1.5rem;
+                        }
+
+                        .frm .grid-2 {
+                                grid-template-columns: 1fr 1fr;
+                        }
+
+                        .frm .grid-3 {
+                                grid-template-columns: auto auto auto;
+                                align-items: center;
+                        }
+
+                        .frm .grid>*:not(:last-child) {
+                                margin-bottom: 0;
+                        }
+
+                        .frm .required-msg {
+                                display: block;
+                        }
+                }
+
+                @media screen and (min-width: 541px) {
+                        .frm input[type="checkbox"]+label::before {
+                                top: 50%;
+                                transform: translateY(-50%);
+                        }
+
+                        .frm input[type="checkbox"]:checked+label::after {
+                                top: 3px;
+                        }
+                }
+        </style>
+</head>
+
+<body class="s6-text-white s6-center bg">
+        <noscript><iframe src=" https://www.googletagmanager.com/ns.html?id=GTM-PP4TQ36" height="0" width="0"
+                        style="display:none;visibility:hidden"></iframe></noscript>
+        <div class="s6-hide-small s6-hide-medium" style="padding-top:2%;"></div>
+        <div class="s6-hide-large" style="padding-top:10%;"></div>
+        <center>
+                <h1 class="s6-margin-bottom s6-jumbo s6-hide-small">Subbrat</h1>
+                <h1 class="s6-margin-bottom s6-xlarge s6-hide-medium s6-hide-large">Subbrat</h1>
+                <form class="frm" style="max-width: 55%; cursor: pointer;" id="formtype">
+                        <select style="text-align: center;text-transform: capitalize;" onchange="formcheck(this);">
+                                <option selected disabled>-- Select type of work --</option>
+                                <option value="webdev">Website - development / management</option>
+                                <option disabled value="sound">Podcast / sound enginering ( available soon ! )</option>
+                                <option disabled>others are under construction</option>
+                        </select>
+                </form>
+                <form class="frm" hidden id="webdeform" style="display: none;">
+                        <div class="container">
+                                <ul>
+                                        <li>
+                                                <div class="grid">
+                                                        <input type="text"
+                                                                placeholder="Name of reference / individual or community"
+                                                                required>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <select>
+                                                        <option selected disabled>-- phase of work --</option>
+                                                        <option>New</option>
+                                                        <option>Ongoing</option>
+                                                        <option>Repair - ensure previous files are present</option>
+                                                        <option>Other</option>
+                                                </select>
+                                        </li>
+                                        <li>
+                                                <div class="grid grid-2">
+                                                        <input type="email" placeholder="Email" required>
+                                                        <input type="tel" placeholder="Phone">
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <textarea placeholder="Message"></textarea>
+                                        </li>
+                                        <li>
+                                                <input type="checkbox" id="terms">
+                                                <label for="terms">I have read and agreed with <a href="">the terms and
+                                                                conditions.</a></label>
+                                        </li>
+                                        <li>
+                                                <div class="grid grid-2 s6-center">
+                                                        <button class="btn-grid" type="submit" disabled>
+                                                                <span class="back">
+                                                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/email-icon.svg"
+                                                                                alt="">
+                                                                </span>
+                                                                <span class="front">SUBMIT</span>
+                                                        </button>
+                                                        <button class="btn-grid" type="reset" disabled>
+                                                                <span class="back">
+                                                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/eraser-icon.svg"
+                                                                                alt="">
+                                                                </span>
+                                                                <span class="front">RESET</span>
+                                                        </button>
+                                                </div>
+                                        </li>
+                                </ul>
+                        </div>
+                </form>
+                <form class="frm" hidden id="soundeng" style="display: none;">
+                        <div class="container">
+                                <ul>
+                                        <li>
+                                                <div class="grid">
+                                                        <input type="text"
+                                                                placeholder="Name of reference / individual or community"
+                                                                required>
+                                                </div>
+                                        </li>
+                                </ul>
+                        </div>
+                </form>
+        </center>
+        <div class=" s6-text-grey s6-xlarge s6-center s6-hide-small"
+                style="padding:24px 48px ;position:fixed; bottom:0;">
+                <a href="http://www.instagram.com/subbrat_" target="_blank"><i
+                                class="s6-xxlarge s6-text-white fa fa-instagram s6-hover-opacity"></i></a>
+                <a href="https://www.linkedin.com/in/subbrat/" target="_blank"><i
+                                class="s6-xxlarge s6-text-white fa fa-linkedin s6-hover-opacity"></i></a>
+                <a href="http://www.twitter.com/yuTheSunflower" target="_blank"><i
+                                class="s6-xxlarge s6-text-white fa fa-twitter s6-hover-opacity"></i></a>
+                <a href="http://www.github.com/Subbrat" target="_blank"><i
+                                class="s6-xxlarge s6-text-white fa fa-github s6-hover-opacity"></i></a>
+                <a href="https://www.quora.com/profile/Subbrat" target="_blank"><i
+                                class="s6-xxlarge s6-text-white fa fa-quora s6-hover-opacity"></i></a>
+                <a href="mailto:m.subbrat@outlook.com" target="_blank"> <i
+                                class="s6-xxlarge s6-text-white fa fa-envelope s6-hover-opacity"></i></a>
+        </div>
+        <div class=" s6-text-grey s6-large s6-center s6-hide-large s6-hide-medium"
+                style="padding:24px 48px ;position:fixed; bottom:0;">
+                <a href=" http://www.instagram.com/subbrat_" target="_blank"><i
+                                class="s6-large s6-text-white fa fa-instagram s6-hover-opacity"></i></a>
+                <a href="https://www.linkedin.com/in/subbrat/" target="_blank"><i
+                                class="s6-large s6-text-white fa fa-linkedin s6-hover-opacity"></i></a>
+                <a href="http://www.twitter.com/yuTheSunflower" target="_blank"><i
+                                class="s6-large s6-text-white fa fa-twitter s6-hover-opacity"></i></a>
+                <a href="http://www.github.com/Subbrat" target="_blank"><i
+                                class="s6-large s6-text-white fa fa-github s6-hover-opacity"></i></a>
+                <a href="https://www.quora.com/profile/Subbrat" target="_blank"><i
+                                class="s6-large s6-text-white fa fa-quora s6-hover-opacity"></i></a>
+                <a href="mailto:m.subbrat@outlook.com" target="_blank"> <i
+                                class="s6-large s6-text-white fa fa-envelope s6-hover-opacity"></i></a>
+        </div>
+        <script>
+                function formcheck(that) {
+                        if (that.value == "webdev") {
+                                document.getElementById("webdeform").style.display = "block";
+                                document.getElementById("formtype").style.display = "none";
+                        }
+                        else if (that.value == "sound") {
+                                document.getElementById("soundeng").style.display = "block";
+                                document.getElementById("formtype").style.display = "none";
+                        }
+                        else {
+                                document.getElementById("webdeform", "soundeng").style.display = "none";
+                        }
+                }
+        </script>
+        <script>const checkbox = document.querySelector('.frm input[type="checkbox"]');
+                const btns = document.querySelectorAll(".frm button");
+                checkbox.addEventListener("change", function () {
+                        const checked = this.checked;
+                        for (const btn of btns) {
+                                checked ? (btn.disabled = false) : (btn.disabled = true);
+                        }
+                });
+        </script>
+</body>
+
+</html>

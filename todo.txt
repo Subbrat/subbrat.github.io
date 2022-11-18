@@ -1,0 +1,48 @@
+. logo
+name of individual / community
+phase of work - repair , new , rearrange
+availability of mans
+paid or unpaid ??
+estimated page of work
+previous elements present ?
+estimated budget
+paid already?
+payment post work?
+
+
+
+
+
+
+
+
+
+
+
+<form method="POST" -
+    action="https://script.google.com/macros/s/AKfycbyvXOqfN-TjOf1Fl2no0YmTWS5SNcSAWmtQyMgJu1vVBlNzhP2ED11JvWxwWYv0kzCV/exec">
+    <!-- <input name="Email" type="email" placeholder="Email" required> -->
+    <input name="Name" type="text" placeholder="Name" required>
+    <br>
+    <!-- <label for="country">Country</label>
+    <select name="Country">
+        <option value="australia">Australia</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+    </select>
+    <br> -->
+    <!-- only the name & value matter id and class for attribution -->
+    <!-- <input type="radio" name="radio" value="30">
+    <label for="age1">0 - 30</label><br>
+    <input type="radio" name="radio" value="60">
+    <label for="age2">31 - 60</label><br>
+    <input type="radio" name="radio" value="100">
+    <label for="age3">61 - 100</label><br><br> -->
+    <INPUT type="reset">
+    <button type="submit" onclick="myFunction()">Send</button>
+</form>
+<script>
+    function myFunction() {
+        window.open("https://www.w3schools.com");
+    }
+</script>
