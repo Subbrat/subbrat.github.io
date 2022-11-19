@@ -30,11 +30,6 @@
                         list-style: none;
                 }
 
-                html,
-                body {
-                        min-height: 900px;
-                }
-
                 :root {
                         --white: #afafaf;
                         --red: #e31b23;
@@ -274,7 +269,7 @@
         </style>
 </head>
 
-<body class="s6-text-white s6-center bg">
+<body class="s6-text-white s6-center bg" id="body">
         <noscript><iframe src=" https://www.googletagmanager.com/ns.html?id=GTM-PP4TQ36" height="0" width="0"
                         style="display:none;visibility:hidden"></iframe></noscript>
         <div class="s6-hide-small s6-hide-medium" style="padding-top:2%;"></div>
@@ -293,11 +288,13 @@
                                         <option disabled>others are under construction</option>
                                 </select>
                         </form>
-                        <form class="frm" hidden id="webdeform" style="display: none;">
+                        <form class="frm" hidden id="webdeform"
+                                action="https://script.google.com/macros/s/AKfycbyixRotsvRX4LOQG6viQlKnKdVNOGov0E1lL-KjHpIQQrwBeESLEznw93UtZMrgcZ3E/exec"
+                                method="post" style="display: none;">
                                 <div class="container">
                                         <li>
                                                 <div class="grid">
-                                                        <input type="text"
+                                                        <input type="text" name="name"
                                                                 placeholder="Name of reference / individual or community"
                                                                 required>
                                                 </div>
@@ -313,7 +310,7 @@
                                         </li>
                                         <li>
                                                 <div class="grid grid-2">
-                                                        <input type="email" placeholder="Email" required>
+                                                        <input type="email" name="phase" placeholder="Email" required>
                                                         <input type="tel" placeholder="Phone">
                                                 </div>
                                         </li>
@@ -327,7 +324,8 @@
                                         </li>
                                         <li>
                                                 <div class="grid grid-2 s6-center">
-                                                        <button class="btn-grid" type="submit" disabled>
+                                                        <button class="btn-grid" href="#popup1" type="submit" disabled
+                                                                onclick="butcl()">
                                                                 <span class="back">
                                                                         <img src="./imges/mail.svg" alt="">
                                                                 </span>
@@ -354,6 +352,21 @@
                                         </li>
                                 </div>
                         </form>
+                        <div class="s6-center" hidden style="max-width: 50%; text-align: center; " id="thanking">
+                                <div class="s6-round-large s6-white" style="text-align: center;">
+                                        <div style="min-height: 5px;"> </div>
+                                        <h1 class="">THANK YOU!</h1>
+                                        <i class="fa fa-check"></i><br>
+                                        <h6>Your submission is my priority, I'll report back to you with your input.
+                                        </h6>
+                                        <button
+                                                class=" s6-button s6-text-black s6-border-white s6-hover-grey s6-round-large"><a
+                                                        href="./index.html" class="s6-bar-item">
+                                                        &nbsp;&nbsp;Home&nbsp;&nbsp;
+                                                </a></button>
+                                        <div style="min-height: 15px;"> </div>
+                                </div>
+                        </div>
                 </div>
         </center>
         <div class=" s6-text-grey s6-xlarge s6-center s6-hide-small"
@@ -400,14 +413,34 @@
                                 document.getElementById("webdeform", "soundeng").style.display = "none";
                         }
                 }
-        </script>
-        <script>const checkbox = document.querySelector('.frm input[type="checkbox"]');
+                const checkbox = document.querySelector('.frm input[type="checkbox"]');
                 const btns = document.querySelectorAll(".frm button");
                 checkbox.addEventListener("change", function () {
                         const checked = this.checked;
                         for (const btn of btns) {
                                 checked ? (btn.disabled = false) : (btn.disabled = true);
                         }
+                });
+        </script>
+        <script>
+                window.addEventListener("load", function () {
+                        const form = document.getElementById('webdeform');
+                        form.addEventListener("submit", function (criss) {
+                                criss.preventDefault();
+                                const data = new FormData(form);
+                                const action = criss.target.action;
+                                fetch(action, {
+                                        method: 'POST',
+                                        body: data,
+                                })
+                                        .then(() => {
+                                                document.getElementById("webdeform", "soundeng").style.display = "none";
+                                                document.getElementById("thanking").style.display = "block";
+                                                // alert("I will get back to you soon!");
+                                        })
+                                document.getElementById('value1').value = '';
+                                document.getElementById('value2').value = '';
+                        });
                 });
         </script>
 </body>
