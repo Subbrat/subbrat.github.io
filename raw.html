@@ -311,92 +311,90 @@
                                 action="https://script.google.com/macros/s/AKfycbyixRotsvRX4LOQG6viQlKnKdVNOGov0E1lL-KjHpIQQrwBeESLEznw93UtZMrgcZ3E/exec"
                                 method="post" style="display: none;">
                                 <div class="container">
-                                        <div class=" container">
-                                                <li>
-                                                        <input type="text" name="name"
-                                                                placeholder="Name of reference / individual or community"
+                                        <li>
+                                                <input type="text" name="name"
+                                                        placeholder="Name of reference / individual or community"
+                                                        required>
+                                        </li>
+                                        <li>
+                                                <select name="phase" id="phase" required>
+                                                        <option disabled>phase of work</option>
+                                                        <option value="new">New</option>
+                                                        <option value="ongoing">Ongoing</option>
+                                                        <option value="repair">Repair / reconstruct</option>
+                                                </select>
+                                        </li>
+                                        <li>
+                                                <select name="duration" id="duration" required>
+                                                        <option disabled>project duration</option>
+                                                        <option value="routine">long term contract - min 5
+                                                                monthes, approx ₹ 1199* per month</option>
+                                                        <option value="15-600">one time - 15 days / 2 max new
+                                                                els** -
+                                                                approx ₹
+                                                                600*</option>
+                                                        <option value="7-400">very short time - 7 days / 1 max
+                                                                new els**
+                                                                -
+                                                                approx ₹ 400*</option>
+                                                </select>
+                                        </li>
+                                        <li>
+                                                <input type="text" name="projvalue" id="projvalue"
+                                                        placeholder="your project value in ₹" required>
+                                        </li>
+                                        <li>
+                                                <div class="grid grid-2">
+                                                        <select name="mans" id="mans" required>
+                                                                <option disabled>availability of team</option>
+                                                                <option value="available">available</option>
+                                                                <option value="only me">not available</option>
+                                                                <option value="to be recruited">to be recruited
+                                                                </option>
+                                                        </select>
+                                                        <input type="number" name="estimated"
+                                                                placeholder="estimated no of pages" required>
+                                                </div>
+                                        </li>
+                                        <textarea type="text" name="ref" placeholder="links of reference"
+                                                required></textarea>
+                                        </li>
+                                        <li>
+                                                <div class="grid grid-2">
+                                                        <input type="email" name="email" placeholder="contact email"
                                                                 required>
-                                                </li>
-                                                <li>
-                                                        <select name="phase" id="phase" required>
-                                                                <option disabled>phase of work</option>
-                                                                <option value="new">New</option>
-                                                                <option value="ongoing">Ongoing</option>
-                                                                <option value="repair">Repair / reconstruct</option>
-                                                        </select>
-                                                </li>
-                                                <li>
-                                                        <select name="duration" id="duration" required>
-                                                                <option disabled>project duration</option>
-                                                                <option value="routine">long term contract - min 5
-                                                                        monthes, approx ₹ 1199* per month</option>
-                                                                <option value="15-600">one time - 15 days / 2 max new
-                                                                        els** -
-                                                                        approx ₹
-                                                                        600*</option>
-                                                                <option value="7-400">very short time - 7 days / 1 max
-                                                                        new els**
-                                                                        -
-                                                                        approx ₹ 400*</option>
-                                                        </select>
-                                                </li>
-                                                <li>
-                                                        <input type="text" name="projvalue" id="projvalue"
-                                                                placeholder="your project value in ₹" required>
-                                                </li>
-                                                <li>
-                                                        <div class="grid grid-2">
-                                                                <select name="mans" id="mans" required>
-                                                                        <option disabled>availability of team</option>
-                                                                        <option value="available">available</option>
-                                                                        <option value="only me">not available</option>
-                                                                        <option value="to be recruited">to be recruited
-                                                                        </option>
-                                                                </select>
-                                                                <input type="number" name="estimated"
-                                                                        placeholder="estimated no of pages" required>
-                                                        </div>
-                                                </li>
-                                                <textarea type="text" name="ref" placeholder="links of reference"
-                                                        required></textarea>
-                                                </li>
-                                                <li>
-                                                        <div class="grid grid-2">
-                                                                <input type="email" name="email"
-                                                                        placeholder="contact email" required>
-                                                                <input type="tel" name="mob"
-                                                                        placeholder="contact mobile number" required>
-                                                        </div>
-                                                </li>
-                                                <li>
-                                                        <textarea name="msg"
-                                                                placeholder="any other message -- !"></textarea>
-                                                </li>
-                                                <li>
-                                                        <input type="checkbox" id="terms">
-                                                        <label for="terms">I have read and agreed with <a href="">the
-                                                                        terms and
-                                                                        conditions.</a></label>
-                                                </li>
-                                                <li>
-                                                        <div class="grid grid-2 s6-center">
-                                                                <button class="btn-grid" href="#popup1" type="submit"
-                                                                        disabled onclick="butcl()">
-                                                                        <span class="back">
-                                                                                <img src="./imges/mail.svg" alt="">
-                                                                        </span>
-                                                                        <span class="front">SUBMIT</span>
-                                                                </button>
-                                                                <button class="btn-grid" type="reset" disabled>
-                                                                        <span class="back">
-                                                                                <img src="./imges/eras.svg" alt="">
-                                                                        </span>
-                                                                        <span class="front">RESET</span>
-                                                                </button>
-                                                                <div style="min-height: 5%;"></div>
-                                                        </div>
-                                                </li>
-                                        </div>
+                                                        <input type="tel" name="mob" placeholder="contact mobile number"
+                                                                required>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <textarea name="msg" placeholder="any other message -- !"></textarea>
+                                        </li>
+                                        <li>
+                                                <input type="checkbox" id="terms">
+                                                <label for="terms">I have read and agreed with <a href="">the
+                                                                terms and
+                                                                conditions.</a></label>
+                                        </li>
+                                        <li>
+                                                <div class="grid grid-2 s6-center">
+                                                        <button class="btn-grid" href="#popup1" type="submit" disabled
+                                                                onclick="butcl()">
+                                                                <span class="back">
+                                                                        <img src="./imges/mail.svg" alt="">
+                                                                </span>
+                                                                <span class="front">SUBMIT</span>
+                                                        </button>
+                                                        <button class="btn-grid" type="reset" disabled>
+                                                                <span class="back">
+                                                                        <img src="./imges/eras.svg" alt="">
+                                                                </span>
+                                                                <span class="front">RESET</span>
+                                                        </button>
+                                                        <div style="min-height: 5%;"></div>
+                                                </div>
+                                        </li>
+                                </div>
                         </form>
                         <form class="frm" hidden id="soundeng" style="display: none;">
                                 <div class="container">
@@ -409,7 +407,7 @@
                                         </li>
                                 </div>
                         </form>
-                        <div class="s6-center" hidden style="max-width: 50%; text-align: center; " id="thanking">
+                        <div class="s6-center" style="max-width: 50%; text-align: center;" hidden id="thanking">
                                 <div class="s6-round-large s6-white" style="text-align: center;">
                                         <div style="min-height: 5px;"> </div>
                                         <h1 class="">THANK YOU!</h1>
@@ -417,7 +415,7 @@
                                         <h6>Your submission is my priority, I'll report back to you with your input.
                                         </h6>
                                         <button
-                                                class=" s6-button s6-text-black s6-border-white s6-hover-grey s6-round-large"><a
+                                                class="s6-button s6-text-black s6-border-white s6-hover-grey s6-round-large"><a
                                                         href="./index.html" class="s6-bar-item">
                                                         &nbsp;&nbsp;Home&nbsp;&nbsp;
                                                 </a></button>
