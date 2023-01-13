@@ -1,4 +1,5 @@
-<h1 align="center">Subbrat</h1>
+<link rel="stylesheet" href="./../el/css/s6css.css">
+<h1 align="center s6-red">Subbrat</h1>
 <h3 align="center">might be a full-stack web-dev and Data analyst.</h3>
 
 <p align="center"> <img src="https://komarev.com/ghpvc/?username=subbrat&label=Profile%20views&color=0e75b6&style=flat" alt="subbrat" /> </p>
