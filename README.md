@@ -1,4 +1,6 @@
+<head>
 <link rel="stylesheet" href="./../el/css/s6css.css">
+</head>
 <h1 align="center s6-red">Subbrat</h1>
 <h3 align="center">might be a full-stack web-dev and Data analyst.</h3>
 
