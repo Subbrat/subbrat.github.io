@@ -3,6 +3,10 @@ html {
     height: 100%
 }
 
+.wh {
+    color: white;
+}
+
 .bg {
     background-image: url('./../imges/bg2.jpg');
     min-height: 100%;
