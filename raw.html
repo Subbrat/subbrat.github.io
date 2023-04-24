@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <head>
         <script>(function (w, d, s, l, i) {
                         w[l] = w[l] || []; w[l].push({
@@ -25,11 +24,9 @@
                 input {
                         text-align: center;
                 }
-
                 li {
                         list-style: none;
                 }
-
                 :root {
                         --white: #afafaf;
                         --red: #e31b23;
@@ -38,48 +35,38 @@
                         --bgFormEls: hsl(0, 0%, 14%);
                         --bgFormElsFocus: hsl(0, 7%, 20%);
                 }
-
                 button,
                 label {
                         cursor: pointer;
                 }
-
                 select {
                         appearance: none;
                 }
-
                 select::-ms-expand {
                         display: none;
                 }
-
                 select:-moz-focusring {
                         color: transparent !important;
                         text-shadow: 0 0 0 var(--white);
                 }
-
                 textarea {
                         resize: none;
                 }
-
                 ul {
                         list-style: none;
                 }
-
                 .container {
                         max-width: 800px;
                         margin: 0 auto;
                         padding: 0 1.5rem;
                 }
-
                 .frm h1 {
                         margin-bottom: 1.5rem;
                 }
-
                 .frm li,
                 .frm .grid>*:not(:last-child) {
                         margin-bottom: 1.5rem;
                 }
-
                 .frm select,
                 .frm input,
                 .frm textarea,
@@ -93,17 +80,14 @@
                         transition: background-color 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25),
                                 transform 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25);
                 }
-
                 .frm textarea {
                         height: 170px;
                 }
-
                 .frm ::placeholder {
                         color: inherit;
                         /*Fix opacity issue on Firefox*/
                         opacity: 1;
                 }
-
                 .frm select:focus,
                 .frm input:focus,
                 .frm textarea:focus,
@@ -112,90 +96,74 @@
                 .frm input[type="checkbox"]:focus+label {
                         background: var(--bgFormElsFocus);
                 }
-
                 .frm select:focus,
                 .frm input:focus,
                 .frm textarea:focus {
                         transform: scale(1.02);
                 }
-
                 .frm *:required,
                 .frm select {
                         background-repeat: no-repeat;
                         background-position: center right 12px;
                         background-size: 15px 15px;
                 }
-
                 .frm *:required {
                         background-image: url(./imges/ast.svg);
                 }
-
                 .frm select {
                         background-image: url(./imges/down.svg);
                 }
-
                 .frm *:disabled {
                         cursor: default;
                         filter: blur(2px);
                 }
-
                 .frm .required-msg {
                         display: none;
                         background: url(./imges/ast.svg) no-repeat center left / 15px 15px;
                         padding-left: 20px;
                 }
-
                 .frm .btn-grid {
                         position: relative;
                         overflow: hidden;
                         transition: filter 0.2s;
                 }
-
                 .frm button {
                         font-weight: bold;
                 }
-
                 .frm button>* {
                         display: inline-block;
                         width: 100%;
                         transition: transform 0.4s ease-in-out;
                 }
-
                 .frm button .back {
                         position: absolute;
                         left: 50%;
                         top: 50%;
                         transform: translate(-110%, -50%);
                 }
-
                 .frm button:enabled:hover .back,
                 .frm button:focus .back {
                         transform: translate(-50%, -50%);
                 }
-
                 .frm button:enabled:hover .front,
                 .frm button:focus .front {
                         transform: translateX(110%);
                 }
-
                 .frm input[type="checkbox"] {
                         position: absolute;
                         left: -9999px;
                 }
-
                 .frm input[type="checkbox"]+label {
                         position: relative;
                         display: inline-block;
                         padding-left: 2rem;
                         transition: background 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25);
                 }
-
                 .frm input[type="checkbox"]+label::before,
                 .frm input[type="checkbox"]+label::after {
                         content: '';
                         position: absolute;
                 }
-
                 .frm input[type="checkbox"]+label::before {
                         left: 0;
                         top: 6px;
@@ -203,11 +171,9 @@
                         height: 18px;
                         border: 2px solid var(--white);
                 }
-
                 .frm input[type="checkbox"]:checked+label::before {
                         background: var(--red);
                 }
-
                 .frm input[type="checkbox"]:checked+label::after {
                         left: 7px;
                         top: 7px;
@@ -217,17 +183,14 @@
                         border-right: 2px solid var(--white);
                         transform: rotate(45deg);
                 }
-
                 footer {
                         font-size: 1rem;
                         text-align: right;
                         backface-visibility: hidden;
                 }
-
                 footer a {
                         text-decoration: none;
                 }
-
                 .float {
                         position: fixed;
                         width: 60px;
@@ -242,61 +205,51 @@
                         box-shadow: 2px 2px 3px #999;
                         z-index: 100;
                 }
-
                 .my-float {
                         margin-top: 16px;
                 }
-
                 footer span {
                         color: var(--red);
                 }
-
                 @media screen and (min-width: 600px) {
                         .frm .grid {
                                 display: grid;
                                 grid-gap: 1.5rem;
                         }
-
                         .frm .grid-2 {
                                 grid-template-columns: 1fr 1fr;
                         }
-
                         .frm .grid-3 {
                                 grid-template-columns: auto auto auto;
                                 align-items: center;
                         }
-
                         .frm .grid>*:not(:last-child) {
                                 margin-bottom: 0;
                         }
-
                         .frm .required-msg {
                                 display: block;
                         }
                 }
-
                 @media screen and (min-width: 541px) {
                         .frm input[type="checkbox"]+label::before {
                                 top: 50%;
                                 transform: translateY(-50%);
                         }
-
                         .frm input[type="checkbox"]:checked+label::after {
                                 top: 3px;
                         }
                 }
         </style>
 </head>
-
-<body class="s6-text-white s6-center bg" id="body">
+<body class="s-text-white s-center bg" id="body">
         <noscript><iframe src=" https://www.googletagmanager.com/ns.html?id=GTM-PP4TQ36" height="0" width="0"
                         style="display:none;visibility:hidden"></iframe></noscript>
-        <div class="s6-hide-small s6-hide-medium" style="padding-top:2%;"></div>
-        <div class="s6-hide-large" style="padding-top:10%;"></div>
+        <div class="s-hide-small s-hide-medium" style="padding-top:2%;"></div>
+        <div class="s-hide-large" style="padding-top:10%;"></div>
         <center>
-                <div class="s6-display-container">
-                        <h1 class="s6-margin-bottom s6-xxlarge s6-hide-small">Subbrat</h1>
-                        <h1 class="s6-margin-bottom s6-xlarge s6-hide-medium s6-hide-large">Subbrat</h1>
+                <div class="s-display-container">
+                        <h1 class="s-margin-bottom s-xxlarge s-hide-small">Subbrat</h1>
+                        <h1 class="s-margin-bottom s-xlarge s-hide-medium s-hide-large">Subbrat</h1>
                         <form class="frm" style="max-width: 55%; cursor: pointer;" id="formtype">
                                 <select style="text-align: center;text-transform: capitalize;"
                                         onchange="formcheck(this);">
@@ -377,7 +330,7 @@
                                                                 conditions.</a></label>
                                         </li>
                                         <li>
-                                                <div class="grid grid-2 s6-center">
+                                                <div class="grid grid-2 s-center">
                                                         <button class="btn-grid" href="#popup1" type="submit" disabled
                                                                 onclick="butcl()">
                                                                 <span class="back">
@@ -407,16 +360,15 @@
                                         </li>
                                 </div>
                         </form>
-                        <div class="s6-center" style="max-width: 50%; text-align: center;" hidden id="thanking">
-                                <div class="s6-round-large s6-white" style="text-align: center;">
+                        <div class="s-center" style="max-width: 50%; text-align: center;" hidden id="thanking">
+                                <div class="s-round-large s-white" style="text-align: center;">
                                         <div style="min-height: 5px;"> </div>
                                         <h1 class="">THANK YOU!</h1>
                                         <i class="fa fa-check"></i><br>
                                         <h6>Your submission is my priority, I'll report back to you with your input.
                                         </h6>
-                                        <button
-                                                class="s6-button s6-text-black s6-border-white s6-hover-grey s6-round-large"><a
-                                                        href="./index.html" class="s6-bar-item">
+                                        <button class="s-button s-text-black s-border-white s-hover-grey s-round-large"><a
+                                                        href="./index.html" class="s-bar-item">
                                                         &nbsp;&nbsp;Home&nbsp;&nbsp;
                                                 </a></button>
                                         <div style="min-height: 15px;"> </div>
@@ -473,5 +425,4 @@
                 });
         </script>
 </body>
-
 </html>
