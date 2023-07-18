@@ -1,12 +1,11 @@
+@charset "UTF-8";
 body,
 html {
     height: 100%
 }
-
 .wh {
     color: white;
 }
-
 .bg {
     background-image: url('./../imges/bg2.jpg');
     min-height: 100%;
@@ -16,24 +15,20 @@ html {
     background-attachment: fixed;
     position: relative;
 }
-
 .fx {
     position: relative;
 }
-
 a {
     color: inherit;
     text-decoration: none;
     font-weight: bold;
     letter-spacing: 1px;
 }
-
 button {
     color: inherit;
     text-decoration: none;
     font-weight: bold;
 }
-
 button {
     background:
         linear-gradient(to right,
@@ -48,50 +43,40 @@ button {
     background-repeat: no-repeat;
     transition: background-size 300ms;
 }
-
 button:hover {
     background-size: 0 3px, 100% 3px;
 }
-
 body {
     animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
-
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
     }
-
     100% {
         opacity: 1;
     }
 }
-
 @media (max-width: 600px) {
     h1 {
         font-size: 2rem;
     }
-
     p {
         font-size: 1rem;
     }
-
     .a,
     s6-button {
         font-size: 10rem
     }
 }
-
 .s6-content {
     max-width: 80%;
 }
-
 p {
     padding-left: 5%;
 }
-
 .txxnx {
     width: 32ch;
     border-right: 3px solid;
@@ -99,13 +84,11 @@ p {
     overflow: hidden;
     white-space: nowrap;
 }
-
 @keyframes blink {
     50% {
         border-color: transparent;
     }
 }
-
 @keyframes type {
     0% {
         width: 0;
