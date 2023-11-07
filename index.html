@@ -27,6 +27,28 @@
 </style>
 
 <body id="body">
+    <script type="text/javascript">
+        function updateCountdown() {
+            var countdownDisplay = document.getElementById('countdown');
+            var now = new Date();
+            var targetTime = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 20, 0, 0); // 8:00 PM today
+            var timeRemaining = targetTime - now;
+
+            if (timeRemaining <= 0) {
+                countdownDisplay.innerHTML = "Time's up!";
+            } else {
+                var hours = Math.floor((timeRemaining / (1000 * 60 * 60)) % 24);
+                var minutes = Math.floor((timeRemaining / 1000 / 60) % 60);
+                var seconds = Math.floor((timeRemaining / 1000) % 60);
+
+                countdownDisplay.innerHTML = hours + "h " + minutes + "m " + seconds + "s";
+                setTimeout(updateCountdown, 1000);
+            }
+        }
+
+        // Start the countdown when the page loads
+        window.onload = updateCountdown;
+    </script>
     <br>
     <h3>Join the Change !</h3>
     <div>
@@ -44,7 +66,9 @@
         <hr>
         <h3>Contestant for Publications and Outreach Council Secretary under Students Affairs Council for year 2023 - 24
         </h3>
-        <h2><span class="s-red">Achievements till today !</span></h2>
+        <h2><span class="s-red">Achievements till today !</span>&nbsp; Will release agenda in&nbsp;<span
+                id="countdown">00</span>
+        </h2>
         <hr>
         <h3>Acknowledgement and Declaration -</h3>
         <ol>
