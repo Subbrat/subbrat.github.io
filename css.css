@@ -1,0 +1,83 @@
+.pcard {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 200px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+}
+
+.title {
+    color: grey;
+    font-size: 18px;
+}
+
+button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: grey;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: grey;
+}
+
+button:hover,
+a:hover {
+    opacity: 0.7;
+}
+
+@media (min-width: 769px) {
+    #topimg {
+        width: 40%;
+    }
+
+    /* Additional laptop-specific styles can be added here */
+}
+
+/* Media query for mobile devices (screens up to 768px wide) */
+@media (max-width: 768px) {
+    #topimg {
+        width: 80%;
+    }
+
+    /* Additional mobile-specific styles can be added here */
+}
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 2px 0;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 3px;
+    text-align: left;
+}
+
+th {
+    background-color: #193047;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #182a6d;
+}
+
+a {
+    text-decoration: none;
+    color: #0077e2;
+    /* Change to your desired link color */
+}
+
+/* Add more styles as needed to match your design preferences */
