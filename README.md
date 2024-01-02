@@ -8,7 +8,7 @@
 
 <p align="center"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=subbrat" alt="subbrat" /></a> </p>
 
-<p align="center"> <a href="https://twitter.com/yuthesunflower" target="blank"><img src="https://img.shields.io/twitter/follow/yuthesunflower?logo=twitter&style=for-the-badge" alt="yuthesunflower" /></a> </p>
+<p align="center"> <a href="https://twitter.com/subbbrat" target="blank"><img src="https://img.shields.io/twitter/follow/subbbrat?logo=twitter&style=for-the-badge" alt="subbbrat" /></a> </p>
 
 <div align="left">
 🏫 [Home Page](https://subbrat.github.io/)
@@ -39,7 +39,7 @@
 <p align="left">
 <a href="https://codepen.io/subbbrat" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codepen.svg" alt="subbbrat" height="30" width="40" /></a>
 <a href="https://dev.to/subbrat" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/devto.svg" alt="subbrat" height="30" width="40" /></a>
-<a href="https://twitter.com/yuthesunflower" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="yuthesunflower" height="30" width="40" /></a>
+<a href="https://twitter.com/subbbrat" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="subbbrat" height="30" width="40" /></a>
 <a href="https://linkedin.com/in/subbrat" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="subbrat" height="30" width="40" /></a>
 <a href="https://fb.com/subbrat0" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="subbrat0" height="30" width="40" /></a>
 <a href="https://instagram.com/subbrat_" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="subbrat_" height="30" width="40" /></a>
