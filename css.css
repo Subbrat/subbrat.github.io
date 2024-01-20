@@ -8,6 +8,10 @@
       color: white;
   }
 
+  .reca {
+      text-decoration: underline;
+  }
+
   .justi {
       text-align: justify;
   }
